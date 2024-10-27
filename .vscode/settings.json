@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/0580097e-e385-4593-946c-3344708f637e/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/nrandom-generator-qwe",
+    "appService.deploySubpath": "."
+}
