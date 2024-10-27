@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Números Aleatorios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Números Aleatorios</h1>
+
+        <form id="randomForm">
+            <label for="lowerBound">Límite Inferior:</label>
+            <input type="number" id="lowerBound" step="any" required>
+
+            <label for="upperBound">Límite Superior:</label>
+            <input type="number" id="upperBound" step="any" required>
+
+            <label for="numDecimals">Decimales:</label>
+            <input type="number" id="numDecimals" min="0" required>
+
+            <label for="quantity">Cantidad de Números:</label>
+            <input type="number" id="quantity" min="1" required>
+
+            <label for="comment">Comentario:</label>
+            <input type="text" id="comment">
+
+            <button type="submit">Generar Números</button>
+        </form>
+
+        <h3>Resultado:</h3>
+        <pre id="result"></pre>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>
