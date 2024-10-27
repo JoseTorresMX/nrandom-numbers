@@ -10,3 +10,16 @@
             border: 1px solid #ccc;/*Opcional; para searar visualmente el area del listado*/
             padding: 10px;
         }
+
+         /* Quitar controles de aumento y decremento en inputs de tipo number */
+        /* Chrome, Safari, Edge, Opera */
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
