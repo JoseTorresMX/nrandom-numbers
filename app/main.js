@@ -22,15 +22,15 @@ document.getElementById("randomForm").addEventListener("submit", async (event) =
             })
         });
 
-        const result = await response.json();
+        /*const result = await response.json();
         
         if (response.ok) {
             document.getElementById("result").textContent = 
-                `Números Aleatorios Generados:\n${result.numbers.join(", ")}\n\nFecha: ${result.date}\nComentario: ${result.comment}`;
+                `Números Aleatorios Generados:\n${result.numbers.join(", ")}\n\nArchivo Excel: ${result.file}`;
         } else {
             document.getElementById("result").textContent = 
                 `Error: ${result.message}`;
-        }
+        }*/
     } catch (error) {
         document.getElementById("result").textContent = `Error: ${error.message}`;
     }
