@@ -1,0 +1,12 @@
+ /* Estilos para la lista en tres columnas */
+        #resultList {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            max-height: 300px;/*Altura maxima para acctivar el scrollbar*/
+            overflow: auto;/*Scroll en vertical*/
+            border: 1px solid #ccc;/*Opcional; para searar visualmente el area del listado*/
+            padding: 10px;
+        }

@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Números Aleatorios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+    <!--<style>
+        /* Estilos para la lista en tres columnas */
+        #resultList {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+    </style>-->
 </head>
 <body>
     <div class="container">
@@ -18,19 +30,21 @@
             <input type="number" id="upperBound" step="any" required>
 
             <label for="numDecimals">Decimales:</label>
-            <input type="number" id="numDecimals" min="0" required>
+            <input type="number" id="numDecimals" min="0" value="0" required>
 
             <label for="quantity">Cantidad de Números:</label>
             <input type="number" id="quantity" min="1" required>
-
-            <label for="comment">Comentario:</label>
-            <input type="text" id="comment">
 
             <button type="submit">Generar Números</button>
         </form>
 
         <h3>Resultado:</h3>
-        <pre id="result"></pre>
+        <!-- Botón para copiar al portapapeles -->
+        <button id="copyButton">Copiar al Portapapeles</button>
+        <p id="copyMessage" style="color: green; display: none;">¡Copiado!</p>
+
+        <ol id="resultList"></ol> <!-- Lista en tres columnas -->
+
     </div>
 
     <script src="/static/main.js"></script>
